@@ -24,6 +24,9 @@
 				height: 23px;
 				display: inline-block;
 			}
+			@media #{$xs} {
+				padding: 0 15px;
+			} 
 		}
 		.navbar-toggle {
 			margin: 0 15px;
@@ -44,7 +47,7 @@
 				@media #{$xs} {
 					display: block;
 					padding: 0;
-					margin: 10px;
+					margin: 10px 0;
 				}
 				img {
 					margin-right: 8px;

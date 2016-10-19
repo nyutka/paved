@@ -87,13 +87,13 @@
     .form-group {
         position: relative;
         margin-bottom: 25px;
-        input, .form-control, .btn.dropdown-toggle {
+        input, .form-control, .bootstrap-select>.dropdown-toggle {
             width: 100%;
             background-color: $input-bg-color;
-            color: $input-color;
             border: none;
             box-shadow: none;
             outline: none;
+            color: $black;
             border-radius: 1px;
             height: 55px;
             font-size: $font-size-base;
@@ -118,7 +118,7 @@
         #url {
             background-image: url(../img/url.png);
         }
-        #category {
+        .bootstrap-select > .dropdown-toggle  {
             background-image: url(../img/category.png);
         }
         #list {
@@ -130,7 +130,14 @@
         #click{
             background-image: url(../img/click.png);
         }
-        .btn.dropdown-toggle  {
+
+        .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+            width: 100%;
+        }
+        .filter-option {
+            color: $input-color;
+        }
+        .selectpicker  {
             margin: 0;
             text-align: left;
             span {
@@ -142,21 +149,33 @@
                 margin-top: 3px;
             }
         }
-        .dropdown-menu{
-            width: 100%;
-            border-radius: 2px;
-            background-color: $input-bg-color;
-            margin-top: -1px;
-            li {
-                color: $white;
-                padding: 10px 20px;
-                font-family: 'Avenir-Book';
-                font-weight: bold;
-                &:hover {
-                    background-color: $input-bg-color;
-                    color: $input-color;
-                } 
+        .bootstrap-select.btn-group {
+            .dropdown-menu {
+                width: 100%;
+                border-radius: 2px;
+                background-color: $input-bg-color;
+                margin-top: -1px;
+                li a {
+                    color: $white;
+                    padding: 10px 20px;
+                    font-family: 'Avenir-Book';
+                    font-weight: bold;
+                    &:hover {
+                        background-color: $input-bg-color;
+                        color: $input-color;
+                    } 
+                }
             }
+            .dropdown-toggle .caret {
+                margin-right: 8px;
+                color: $input-color;
+                border-top: 8px dashed;
+                border-right: 8px solid transparent;
+                border-left: 8px solid transparent;
+            }
+        }
+        .bootstrap-select .dropdown-toggle:focus {
+            outline: none !important;
         }
 
     }
