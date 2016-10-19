@@ -1,0 +1,71 @@
+- name: Home
+  url: /
+
+<<<<<<< HEAD
+- name: Services
+  url: /services/
+  footer: true
+
+  anchor_class: XXXcenter-text
+
+=======
+- name: Work with us
+  url: /work-with-us/
+>>>>>>> cc-master
+  pills:
+  
+  - name: Web Apps
+    url: /web-apps/
+  
+  - name: Mobile Apps
+    url: /mobile-apps/
+    
+  - name: IoT
+    url: /iot/
+    
+  - name: Business Apps
+    url: /business_applications/
+    
+  - name: API
+    url: /api/
+
+<<<<<<< HEAD
+  - name: Business Apps
+    url: /business-apps/
+
+=======
+>>>>>>> cc-master
+  - name: Cloud
+    url: /cloud/
+
+  - name: Games
+    url: /games/
+
+
+
+<<<<<<< HEAD
+  - name: Web Apps
+    url: /web-apps/
+
+- name: Our Work
+  url: /our-work/
+  footer: true
+=======
+
+- name: Portfolio
+  url: /portfolio/
+>>>>>>> cc-master
+
+- name: About
+  url: /about/
+
+- name: Blog
+  url: /blog/
+  footer: true
+
+- name: Contact
+  url: /contact/
+<<<<<<< HEAD
+  footer: true
+=======
+>>>>>>> cc-master

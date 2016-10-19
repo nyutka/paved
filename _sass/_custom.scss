@@ -1,0 +1,101 @@
+.main-body {
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+	width: 100%;
+	background-position: top;
+
+	// Header styles
+	.navbar {
+		padding: 60px 0;
+		margin: 0;
+		border: none;
+		transition: all 0.3s ease-in-out;
+		.navbar-brand {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 34.4px;
+			padding: 0 30px;
+			height: 34.4px;
+			img {
+				height: 23px;
+				display: inline-block;
+			}
+		}
+		.navbar-toggle {
+			margin: 0 15px;
+		}
+		.navbar-toggle .icon-bar {
+			background-color: $whitish-yellow;
+			width: 27px;
+			height: 3px;
+			border-radius: 0;
+		}
+		.nav {
+			li {
+				display: inline-block;
+				padding: 0 30px;
+				@media #{$sm} {
+					padding: 0 10px;
+				}
+				@media #{$xs} {
+					display: block;
+					padding: 0;
+					margin: 5px 0;
+				}
+				img {
+					margin-right: 8px;
+					max-height: 35px;
+					@media #{$sm} {
+						max-height: 28px;
+					}
+					@media #{$xs} {
+						max-height: 20px;
+					}
+				}
+				a {
+					padding: 0;
+					margin: 0;
+					&:focus, &:hover {
+						background-color: transparent;
+					}
+				}
+			}
+			.links {
+				display: inline-block;
+				li:last-child {
+					border-right: 3px solid rgba(11,8,8,0.10);
+					@media #{$xs} { 
+						border: none;
+					}
+				}
+			}
+			.login {
+				.btn.dropdown-toggle {
+					background-color: transparent;
+					padding: 0;
+					box-shadow: none;
+					.glyphicon  {
+						color: $dark-purple;
+						margin-left: 12px;
+						vertical-align: middle;
+					}
+				}
+				.dropdown-menu {
+					background-color: rgba(2, 13, 62, 0.18);
+					padding: 10px 0;
+					li {
+						margin: 0;
+						a {
+							display: block;
+							padding: 10px 0;
+							color: $whitish-pink;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Body styles
+	
+}

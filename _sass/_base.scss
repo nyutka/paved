@@ -1,0 +1,91 @@
+/*** Reset some basic elements ***/
+    body, h1, h2, h3, h4, h5, h6,
+    p, blockquote, pre, hr,
+    dl, dd, ol, ul, figure {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    img {
+        max-width: 100%
+    }
+
+/*** Basic styling ***/
+    html, body {
+        height: 100%;
+    }
+    body {
+        color: $text-color;
+        font-size: $font-size-base;
+        font-family: $font-family-base;
+        line-height: $line-height-base;
+    }
+    .v-center {
+        display: table;
+        @media #{$xs}  {
+            display: block;
+        }
+
+        & > * {
+            display: table-cell;
+            vertical-align: middle;
+            float: none;
+            @media #{$xs}  {
+                display: block;
+            }
+        }
+    }
+
+/*** Typography ***/
+    h1 {
+        font-size: $font-size-h1;
+        color: $black;
+    }
+    h2 {
+        font-size: $font-size-h2;
+        color: $grey;
+        font-family: 'Avenir-Book';
+    }
+    h3 {
+        font-size: $font-size-h3;
+        color: $greyish-blue;
+        font-family: 'Avenir-Book';
+    }
+    h4 {
+        font-size: $font-size-h4;
+        font-family: 'Avenir-Book';
+        color: $grey;
+    }
+    h5 {
+        font-size: $font-size-h5;
+        font-family: 'Avenir-Book';
+        color: $dark-grey;
+    }
+    h6 {
+        font-size: $font-size-h6;
+        font-family: 'Avenir-Book';
+        color: $whitish-yellow;
+    }
+    p {
+        margin-bottom: 20px;
+        font-size: $font-size-base-large;
+    }
+
+/*** Link styles ***/    
+    a {
+        font-size: $link-size;
+        color: $whitish-pink;
+        transition: all 0.2s ease-in;
+        &:hover, &:focus {
+            color: lighten($whitish-pink, 30%);
+            text-decoration: none;
+        }
+    }

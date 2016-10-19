@@ -1,0 +1,48 @@
+- image: man.jpg
+  name: LAURA TATO GARCIA
+<<<<<<< HEAD
+  subtitle: >
+     Hi! My name is Laura and I am an agile project manager. <br/><br/>
+     I effectively manage time, budget and scope to ensure projects are delivered on time.
+     I believe in having a strong collaboration with my clients and always involving my team.
+  description: I am not the 'boss' so to speak, I rather facilitate and coordinate all activities and resources required for quality and quick software development. I work with a cross-functional team and I always strive to achieve a high level of performance and quality in delivering projects. I can work in sprints following the agile methodology which allows the team to handle change much better. I keep on top of everything to ensure your project is on time, on budget and of course, enjoyable!
+=======
+  subtitle: I use a blend of design thinking techniques and agile methodologies to create successful digital products. 
+
+  description: >
+    I am part project manager, part user experience obsessed and part organisation queen.
+    Helping clients understand their users needs and goals and translate them into technical tasks is what makes me happy.
+    I follow agile methodologies and I believe in the MVP approach of shipping early and often. My team means everything to me and I make sure they stay on track and that they have fun along the way! 
+
+>>>>>>> cc-master
+  skill:
+  - Scrum 
+  - Planning
+  - Team management
+  - Collaboration
+  skill-2:
+  - Effective communication
+  - Design Thinking
+  - User Centered Design
+  - Prototyping
+
+
+- image: man.jpg
+  name: DIMITRY KIREYENKOFF
+  subtitle: What I do best is making complex things simple and creating technical solutions which bring value to businesses.
+  description: >
+      My passion for coding started in ‘95 using a 486DX computer. Since then I have worked with a variety of technologies building multiple apps. Leading development of the products for our clients 
+      I keep my feet on two grounds: latest technologies and people needs. Creating bespoke and custom business solutions requires juggling a variety of technologies- Java, PHP, JavaScript, Amazon Cloud Service, 
+      databases and many more. However the most important part is establishing dialogue with you to understand your business objectives. This conversation allows to find a sweet spot where technology fits the best 
+      with the organizational needs and thus provides the best value.
+  skill:
+  - Software Architecture, Cloud Architecture
+  - AWS Cloud Services, Heroku, Azure Cloud
+  - IoT and Hardware Programming
+  - Webdevelopment, Mobile application development
+  - Java / Spring MVC / Android
+  skill-2:
+  - UI/UX and Rapid Prototyping
+  - PHP / Symfony developer Jquery
+  - MySQL, Amazon DynamoDB, MongoDB, Postgres
+  - REST API

@@ -1,0 +1,9 @@
+# Site settings
+title: Paved
+url: "http://yourwebsite.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
