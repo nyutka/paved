@@ -3,6 +3,7 @@
 	background-size: cover;
 	width: 100%;
 	background-position: top;
+	padding-bottom: 350px;
 
 	// Header styles
 	.navbar {
@@ -10,11 +11,14 @@
 		margin: 0;
 		border: none;
 		transition: all 0.3s ease-in-out;
+		@media #{$xs} { 
+			padding: 30px 0;
+		}
 		.navbar-brand {
 			display: inline-block;
 			vertical-align: middle;
 			line-height: 34.4px;
-			padding: 0 30px;
+			padding: 0 35px;
 			height: 34.4px;
 			img {
 				height: 23px;
@@ -40,7 +44,7 @@
 				@media #{$xs} {
 					display: block;
 					padding: 0;
-					margin: 5px 0;
+					margin: 10px;
 				}
 				img {
 					margin-right: 8px;
@@ -81,7 +85,7 @@
 					}
 				}
 				.dropdown-menu {
-					background-color: rgba(2, 13, 62, 0.18);
+					background-color: rgba(16, 45, 92, 0.85);
 					padding: 10px 0;
 					li {
 						margin: 0;
@@ -97,5 +101,135 @@
 	}
 
 	// Body styles
+	.col-md-7, .col-md-5 {
+		padding: 0;
+		@media #{$xs} {
+			padding: 0 15px;
+		}
+	}
+	.question {
+        background-image: url(../img/question.png);
+        background-repeat: no-repeat;
+        background-size: auto 23px;
+        width: 24px;
+        display: inline;
+        height: 55px;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        background-position: right center;
+        line-height: 72px;
+        cursor: pointer;
+        opacity: 0.3;
+        transition: opacity 0.3s ease-in;
+        &:hover {
+            opacity: 1;
+            & +.help {
+            	opacity: 1;
+            	visibility: visible;
+            }
+        }
+    }
+	.help {
+		width: 290px;
+		background-color: $greenish-blue;
+		border-radius: 2px;
+		padding: 20px;
+		position: absolute;
+		z-index: 10;
+		right: 60px;
+		top: -15px;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.3s ease-in-out;
+		@media #{$xs} {
+			width: 210px;
+			padding: 20px;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			right: -9px;
+			top: 33px;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 10px 0 10px 10px;
+			border-color: transparent transparent transparent $greenish-blue;
+		}
+		.col-sm-3 {
+			border-right: 3px solid rgba(11, 8, 8, 0.1);
+		}
+		h6 {
+			font-size: 12px;
+			color: #e9ecf2;
+			margin-bottom: 10px;
+			text-align: left;
+			text-transform: uppercase;
+		}
+		small {
+			text-align: left;
+			color: #c1dde7;
+			font-size: 14px;
+			display: block;
+			font-family: 'Avenir-book';
+		}
+		img {
+			height: 40px;
+		}
+	}
+	.sign-up, .earning {
+		border-radius: 2px;
+	}
+	.sign-up {
+		padding: 75px 90px;
+		background-color: $white;
+		@media #{$xs} {
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+	}
+	.earning {
+		background-color: $dark-blue;
+		padding-bottom: 75px;
+		.heading {
+			padding: 75px 90px 0 75px;
+			h2 {
+				margin-bottom: 35px;
+				color: $whitish-blue;
+			}
+			p {
+				font-size: 17px;
+				color: $greyish-blue;
+			}
+			@media #{$xs} {
+				padding: 20px 20px 0 20px;
+			}
+		}
+	}
+	.price {
+		background-color: $dark-blue;
+		margin-top: -40px;
+		width: 290px;
+		position: relative;
+		background: url(../img/sun.png);
+		height: 300px;
+		text-align: center;
+		display: inline-block;
+		background-size: cover;
+		div {
+			position: absolute;
+			top: 0;
+			color: $white;
+			font-size: 45px;
+			top: 115px;
+			left: 50%;
+			margin-left: -65px;
+			small {
+				font-size: 15px;
+				display: block;
+			}
+		}
+	}
 	
 }

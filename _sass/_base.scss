@@ -14,40 +14,23 @@
             text-decoration: none;
         }
     }
-    img {
-        max-width: 100%
-    }
 
 /*** Basic styling ***/
     html, body {
-        height: 100%;
+        min-height: 100%;
     }
     body {
         color: $text-color;
         font-size: $font-size-base;
         font-family: $font-family-base;
-        line-height: $line-height-base;
-    }
-    .v-center {
-        display: table;
-        @media #{$xs}  {
-            display: block;
-        }
-
-        & > * {
-            display: table-cell;
-            vertical-align: middle;
-            float: none;
-            @media #{$xs}  {
-                display: block;
-            }
-        }
     }
 
 /*** Typography ***/
     h1 {
         font-size: $font-size-h1;
         color: $black;
+        margin-bottom: 35px;
+        letter-spacing: 5px;
     }
     h2 {
         font-size: $font-size-h2;
@@ -58,21 +41,29 @@
         font-size: $font-size-h3;
         color: $greyish-blue;
         font-family: 'Avenir-Book';
+        margin-bottom: 35px;
     }
     h4 {
         font-size: $font-size-h4;
         font-family: 'Avenir-Book';
         color: $grey;
+        margin-bottom: 75px;
+        opacity: 0.66;
+        line-height: 1.6;
+        padding: 0 15px;
     }
     h5 {
         font-size: $font-size-h5;
-        font-family: 'Avenir-Book';
-        color: $dark-grey;
+        color: $black;
+        opacity: 0.56;
+        letter-spacing: 2px;
+        margin-bottom: 25px;
     }
     h6 {
         font-size: $font-size-h6;
-        font-family: 'Avenir-Book';
         color: $whitish-yellow;
+        margin-bottom: 45px;
+        letter-spacing: 2px;
     }
     p {
         margin-bottom: 20px;
@@ -84,8 +75,103 @@
         font-size: $link-size;
         color: $whitish-pink;
         transition: all 0.2s ease-in;
+        font-family: 'AvenirLT-Roman';
+        background-position: cover;
         &:hover, &:focus {
             color: lighten($whitish-pink, 30%);
             text-decoration: none;
+        }
+    }
+
+/*** INput styles ***/
+    .form-group {
+        position: relative;
+        margin-bottom: 25px;
+        input, .form-control, .btn.dropdown-toggle {
+            width: 100%;
+            background-color: $input-bg-color;
+            color: $input-color;
+            border: none;
+            box-shadow: none;
+            outline: none;
+            border-radius: 1px;
+            height: 55px;
+            font-size: $font-size-base;
+            font-family: 'AvenirLTStd-Medium';
+            padding-left: 55px;
+            background-repeat: no-repeat;
+            margin-right: 35px;
+            background-size: auto 23px;
+            background-position: 20px 14px;
+            @media #{$xs} {
+                padding-left: 47px;
+            }
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+            &::-webkit-input-placeholder { color: $input-color; }
+            &::-moz-placeholder          { color: $input-color; }/* Firefox 19+ */
+            &:-moz-placeholder           { color: $input-color; }/* Firefox 18- */
+            &:-ms-input-placeholder      { color: $input-color; }
+        }
+        #url {
+            background-image: url(../img/url.png);
+        }
+        #category {
+            background-image: url(../img/category.png);
+        }
+        #list {
+            background-image: url(../img/list.png);
+        }
+        #open {
+            background-image: url(../img/open.png);
+        }
+        #click{
+            background-image: url(../img/click.png);
+        }
+        .btn.dropdown-toggle  {
+            margin: 0;
+            text-align: left;
+            span {
+                color: #979b9f;
+                vertical-align: middle;
+                text-align: right;
+                float: right;
+                margin-right: 10px;
+                margin-top: 3px;
+            }
+        }
+        .dropdown-menu{
+            width: 100%;
+            border-radius: 2px;
+            background-color: $input-bg-color;
+            margin-top: -1px;
+            li {
+                color: $white;
+                padding: 10px 20px;
+                font-family: 'Avenir-Book';
+                font-weight: bold;
+                &:hover {
+                    background-color: $input-bg-color;
+                    color: $input-color;
+                } 
+            }
+        }
+
+    }
+    
+
+/*** Button ***/
+    .btn.submt-btn {
+        background-color: $green;
+        font-size: $button-size;
+        color: #e3f7f1;
+        width: 100%;
+        height: 65px;
+        letter-spacing: 2px;
+        border-radius: 30px;
+        &:focus {
+            outline: none;
         }
     }

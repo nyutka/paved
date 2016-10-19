@@ -16,7 +16,7 @@ $font-size-h6: floor(($font-size-base * 0.83));
 
 $link-size: floor(($font-size-base * 0.92));
 
-$button-size: floor(($font-size-base * 0.93));
+$button-size: floor(($font-size-base * 0.9375));
 
 $line-height-base: 34px;
 $line-height-base-small: 28px;
@@ -34,7 +34,6 @@ $link-hover-color: #247ba0;
 
 $black: #131925;
 $grey: #5b5e64;
-$dark-grey: #5b5e64;
 $white: #fff;
 
 $whitish-pink: #f2dcdb;
@@ -46,10 +45,6 @@ $green: #055c51;
 $greenish-blue: #0c789c;
 $dark-blue: #161d33;
 $dark-purple: #102d5c;
-
-
-$border-radius: 12px;
-
 
 
 /*** Breakpoints ***/

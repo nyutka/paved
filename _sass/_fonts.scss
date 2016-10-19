@@ -1,20 +1,50 @@
 @font-face {
 	font-family: 'AvenirLTStd-Medium';
-	src: url('/fonts/AvenirLTStd-Medium.eot') format('embedded-opentype');
- 	font-weight: normal;
-  	font-style: normal;
+	src: url('/fonts/AvenirLTStd-Medium.eot') format('embedded-opentype'),
+	url('/fonts/AvenirLTStd-Medium.otf')  format('opentype'),
+	url('/fonts/AvenirLTStd-Medium.woff') format('woff'),
+	url('/fonts/AvenirLTStd-Medium.ttf')  format('truetype'),
+	url('/fonts/AvenirLTStd-Medium.svg#AvenirLTStd-Medium') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Avenir-Heavy';
-	src: url('/fonts/Avenir-Heavy.eot') format('embedded-opentype');
- 	font-weight: normal;
-  	font-style: normal;
+	src: url('/fonts/Avenir-Heavy.eot') format('embedded-opentype'),
+	url('/fonts/Avenir-Heavy.woff') format('woff'),
+	url('/fonts/Avenir-Heavy.ttf')  format('truetype'),
+	url('/fonts/Avenir-Heavy.svg#Avenir-Heavy') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Avenir-Book';
-	src: url('fonts/Avenir-Book.eot') format('embedded-opentype');
+	src: url('/fonts/Avenir-Book.eot') format('embedded-opentype'),
+	url('/fonts/Avenir-Book.woff') format('woff'),
+	url('/fonts/Avenir-Book.ttf')  format('truetype'),
+	url('/fonts/Avenir-Book.svg#Avenir-Book') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvenirLTStd-Medium';
+	src: url('/fonts/AvenirLTStd-Medium.eot') format('embedded-opentype'),
+	url('/fonts/AvenirLTStd-Medium.otf')  format('opentype'),
+	url('/fonts/AvenirLTStd-Medium.woff') format('woff'),
+	url('/fonts/AvenirLTStd-Medium.ttf')  format('truetype'),
+	url('/fonts/AvenirLTStd-Medium.svg#AvenirLTStd-Medium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AvenirLT-Roman';
+	src: url('/fonts/AvenirLT-Roman.eot') format('embedded-opentype'),
+	url('/fonts/AvenirLT-Roman.woff') format('woff'),
+	url('/fonts/AvenirLT-Roman.ttf')  format('truetype'),
+	url('/fonts/AvenirLT-Roman.svg#AvenirLT-Roman') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
